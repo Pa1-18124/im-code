@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>User Registration</title>
+    <style>
+        .container { max-width: 500px; margin: 20px auto; padding: 20px; }
+        .form-group { margin-bottom: 15px; }
+        label { display: block; margin-bottom: 5px; }
+        input, select { width: 100%; padding: 8px; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h2>User Registration</h2>
+        <form action="register" method="POST">
+            <div class="form-group">
+                <label>Username:</label>
+                <input type="text" name="username" required maxlength="30">
+            </div>
+
+            <div class="form-group">
+                <label>Password:</label>
+                <input type="password" name="password" required maxlength="20">
+            </div>
+
+            <div class="form-group">
+                <label>Email:</label>
+                <input type="email" name="email" required maxlength="20">
+            </div>
+
+            <div class="form-group">
+                <label>First Name:</label>
+                <input type="text" name="firstname" maxlength="20">
+            </div>
+
+            <div class="form-group">
+                <label>Last Name:</label>
+                <input type="text" name="lastname" maxlength="20">
+            </div>
+
+            <div class="form-group">
+                <label>Active:</label>
+                <input type="checkbox" name="active">
+            </div>
+
+            <div class="form-group">
+                <label>Attendingdoctor:</label>
+                <input type="checkbox" name="attendingdoctor">
+            </div>
+
+            <div class="form-group">
+                <label>Technician:</label>
+                <input type="checkbox" name="technician">
+            </div>
+
+            <div class="form-group">
+                <label>Admin:</label>
+                <input type="checkbox" name="admin">
+            </div>
+
+            <div class="form-group">
+                <label>Staff:</label>
+                <input type="checkbox" name="staff">
+            </div>
+
+            <button type="submit">Register</button>
+        </form>
+    </div>
+</body>
+</html>
